@@ -89,10 +89,6 @@ fun MealPicture(resourceId: String, imageSize: Dp) {
 
     Card(
         shape = CircleShape,
-        border = BorderStroke(
-            width = 4.dp,
-            color = Color.Red
-        ),
         modifier = Modifier
             .size(imageSize)
             .padding(8.dp),

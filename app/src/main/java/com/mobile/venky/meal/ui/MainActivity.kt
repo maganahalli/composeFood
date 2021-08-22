@@ -16,7 +16,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MealTheme {
-                Text(text = "Hello Compose!!!!!!")
                 val viewModel: MealsCategoriesViewModel = viewModel()
                 MealsApplication(viewModel)
             }

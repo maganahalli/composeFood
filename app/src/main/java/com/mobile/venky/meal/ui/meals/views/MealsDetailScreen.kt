@@ -26,7 +26,7 @@ fun MealsDetailScreen(
     val meal = viewModel?.mealsState?.value?.first { meal -> mealId == meal.id }
 
     Scaffold(topBar = {
-        ToolbarWidget("Profile Details", Icons.Default.ArrowBack) {
+        ToolbarWidget("Meal Details", Icons.Default.ArrowBack) {
             navController?.navigateUp()
         }
     }) {
@@ -40,7 +40,7 @@ fun MealsDetailScreen(
                 verticalArrangement = Arrangement.Top
             ) {
                 if (meal != null) {
-                    MealPicture(meal.imageUrl, 240.dp)
+                    MealPicture(meal.imageUrl, 150.dp)
                     MealContent(meal, Alignment.CenterHorizontally)
                 }
             }
